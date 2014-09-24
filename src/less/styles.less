@@ -1,0 +1,228 @@
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import "../../bower_components/lesshat/build/lesshat.less";
+@import "idangerous.swiper.css";
+@import "variables";
+@import "bootswatch";
+
+body{
+	padding-top: 238px;
+	//-webkit-font-smoothing: antialiased;
+	background: url(../i/bg-body-bottom.png) no-repeat bottom center;
+	background-size: 100% auto;
+
+}
+
+.container{
+	//width: 1160px !important;
+}
+
+
+.swiper-container {
+  height: 400px;
+  position: relative;
+		
+  .pagination {
+    position: absolute;
+    right: 0;
+    text-align: center;
+    bottom:5px;
+    width: 50%;
+  }
+
+  .swiper-pagination-switch {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: @brand-secondary;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .swiper-active-switch {
+    background: @brand-primary;
+  }
+
+
+}
+
+.btn{
+	.border-radius(20px); // border radius
+	//background-color: #000; // layer fill content
+	.box-shadow(~"0 1px 0 0px #ddd"); // drop shadow
+	//.background-image(~"linear-gradient(bottom, darken(@brand-primary) 0%, @brand-primary 100%)"); // gradient overlay
+	padding: 10px 30px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	margin: 20px 0;
+	&:hover{
+		color: #fff;
+	}
+}
+
+a.more{
+	font-weight: 700;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer{
+	padding:2em 0;
+	color: #fff;
+		font-weight: 400;
+	a{
+		color: #fff;
+	}
+	background: fade(@brand-primary, 85%);
+	li{
+		float:left;
+		margin-right:1.5em;
+		margin-bottom:1.5em
+	}
+	p{
+		clear:left;
+		margin-bottom:0
+	}
+}
+
+#navbar-main{
+	ul.navbar-nav{
+		text-align: center;
+		float: none;
+		background: url(../i/bg-nav-shade.png) no-repeat top center;
+		li{
+			font-size: ceil(@font-size-base * 1.2);
+			font-weight: 800;
+			float: none;
+			display: inline-block;
+			font-size: 14px;
+			a{
+				display: inline-block;
+				text-transform: uppercase;
+				font-weight: bold;
+
+			}
+
+			&.active{
+				&:after{
+					content: " ";
+					border-top: 0px solid white;
+					border-left: 7px solid white;
+					border-right: 7px solid white;
+					border-bottom: 8px solid @brand-primary;
+					position: absolute;
+					margin-left: -7px;
+					bottom: -2px;
+					left: 50%;
+				}
+
+			}
+		}
+	}
+
+}
+
+.navbar-fixed-top{
+	.logo{
+		border-bottom: 4px solid @brand-secondary;
+		text-align: center;
+		img{
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			-ms-transition: all 0.3s;
+			-o-transition: all 0.3s;
+			transition: all 0.3s;
+			height: 150px;
+			margin: 15px 0;
+
+			&.smaller{
+				height: 100px;
+				margin: 5px 0;
+			}
+		}
+	}
+}
+
+article{
+		padding: 0 0 50px 0;
+
+		header{
+			// .make-sm-column(10);
+			// .make-sm-column-offset(1);
+			padding-top: 50px;
+			background: url(../i/bg-section-shade.png) no-repeat top center;
+			text-align: center;
+			p{
+				color: #252727;
+				margin-top: 20px;
+				margin-bottom: 40px;
+				font-size: 1.2em;
+			}
+		}
+
+		&#section-slider{
+			margin-top: 80px;
+			.text, .image{
+				text-align: center;
+				.make-sm-column(6);
+			}
+		}
+		&#features{
+			background: url(../i/bg-purple-shade-x.png) repeat-x top left;
+
+			.group{
+				.make-row();
+				margin-top: 40px;
+				.featured-item{
+					.make-sm-column(3);
+					text-align: center;
+					h4{
+						font-weight: bold;
+					}
+				}
+
+				&.group-2 .featured-item:first-child{
+					.make-sm-column-offset(1.5);
+				}
+			}
+		}
+
+		&#about{
+			text-align: left;
+		}
+}
+
+footer{
+	background: rgba(0,0,0,0.7);
+	margin-top: 300px;
+
+	text-align: center;
+	font-weight: bold;
+	padding: 10px 0 30px 0;
+	ul.navbar-nav{
+		text-align: center;
+		float: none;
+		li{
+			font-size: ceil(@font-size-base * 1.2);
+			float: none;
+			display: inline-block;
+			font-size: 14px;
+			a{
+				display: inline-block;
+				text-transform: uppercase;
+				font-weight: bold;
+				color: @brand-primary;
+				&:hover{
+					background: none;
+					color: #fff;
+				}
+			}
+
+			&.active{
+				color: #fff;
+			}
+		}
+	}
+
+}
+
