@@ -15,7 +15,27 @@
         <![endif]-->
   </head>
   <body>
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="infobar-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <b>Bevásárló kosár</b>
+            <a>
+              <span class="sc-button"></span> 
+              <span id="cart-total"> 0 Elem - <strong>0 Ft</strong> </span> 
+            </a> 
+            <span id="CartButtons" class="content"><span class="empty">Kosara jelenleg üres</span> </span> 
+          </div>
+          <div class="col-sm-6">
+            <div id="welcome" class="pull-right">Üdvözöljük
+              <a href="/Account/LogOn">Bejelentkezés</a> vagy
+              <a href="/Account/Register">Register</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-default">
       <div class="logo">
         <a href="/">
           <img src="i/content/markus-logo-white.svg" alt="Márkus Elixír">
@@ -99,13 +119,14 @@
     <article id="features">
       <div class="container">
         <header>
-          <h2>107 féle gyümölcsvirág kivonatot tartalmaz...</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aut ducimus aperiam fuga quaerat provident voluptate, veritatis magnam laboriosam eos! Commodi ut sapiente delectus laudantium quos deleniti quis similique a.</p>
+          <h2>Összetevők</h2>
+          <p>A Márkus Elixír 107 növényi esszencia kivonatot tartalmazó komplex információterápiás készítmény. Nem betegségeket vagy tüneteket, hanem archetipikus élethelyzeteket és problémaköröket kezel és oldhat meg, melyek bizonyos számban minden ember
+            életében előfordulhatnak.</p>
         </header>
         <div class="group group-1">
           <div class="featured-item">
             <img src="i/content/flower-drop-1.png">
-            <h4>cseresznyevirág</h4>
+            <p>A C-vitamin a világ egyik legismertebb és legtöbbet használt vitaminja. Napjainkban leginkább a sejtvédő hatása miatt ismert, vízben oldódó antioxidánsként a C-vitamin véd a szabad gyökök károsító hatásával szemben.</p>
           </div>
           <div class="featured-item">
             <img src="i/content/flower-drop-2.png">
@@ -139,44 +160,6 @@
         </div>
       </div>
     </article>
-    <article id="about">
-      <div class="container">
-        <header>
-          <h2>107 féle gyümölcsvirág kivonatot tartalmaz...</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aut ducimus aperiam fuga quaerat provident voluptate, veritatis magnam laboriosam eos! Commodi ut sapiente delectus laudantium quos deleniti quis similique a.</p>
-        </header>
-        <div class="row">
-          <div class="col-sm-6">
-            <p>A termék megalkotója Dr. Márkus István, aki életében felismerte a homeopátia és a hagyományos orvoslás egymás mellett működésének előnyeit. Célja egy olyan szer kialakítása volt, amely a test-lélek- szellem együttes gyógyítására tud hatni
-              egyszerre. Kutatásai és munkássága során világossá vált számára, hogy a különböző tünetekkel és betegségekkel jelentkező páciensek problémái jellemzően csoportosíthatóak egy-egy kritikus témakörbe. Az egyes nehézségek gyógyításának módja
-              kis számú csoportokra osztható. A feladat tehát orvosként a megállapított alapprobléma-csoport megoldására törekvés lett, amely által az öngyógyítás beindítása a cél.
-            </p>
-            <p>Az ismert homeopata gyógyító módszereknél különböző tendenciák jellemzők, ezt Dr. Márkus István klinikai orvoslás tudása bővítette ki. Hivatása alatt megismerte, hogy a növényi eredetű szerek kimutathatóan hatásosak, hiteles vizsgálatok bizonyítják
-              jótékony hatásukat.
-            </p>
-            <p>Az élet a szimmetrikus egyensúlyban tud kiteljesedni. Az egyensúlyra törekvés szerint kiegyenlítődik minden, különben probléma = betegség valamilyen megfordulása lép fel először lelkünkben, amely a későbbiekben testi tünete(ke)t produkál.
-            </p>
-            <p>Mindennapi teendőinkben is az „arany középútra” törekszünk, azok a dolgok, cselekvések vagy viselkedések, amelyek egyoldalúak vagy szélsőségesek, egy idő után nem kívánatosak lesznek saját magunk vagy környezetünk számára. Jellemző ez életformára,
-              felerősödött tulajdonságra egyaránt, hogy előbb-utóbb ellenpólust kíván, hogy megtörténhessen az egyensúlyi állapot beállta.
-            </p>
-          </div>
-          <div class="col-sm-6">
-            <p>Általánosságban a nyugodt és kiegyensúlyozott helyzetben lévő személyek sohasem betegek, míg a hosszan tartó stressz hatására egyre több vagy egymást váltó betegségek alakulnak ki mindenkinél. A lelki problémák okoznak testi tüneteket.
-            </p>
-            <p>Az orvos feladata a fizikai tünetek kezelése, legvégső esetben műtéti beavatkozás lehetősége, hogy a beteg újragondolja életét, változtasson rajta és megtalálja azok megoldásait. Fontos azonban, hogy a kiváltó okokat a lélekben kell megoldani,
-              annak érdekében, hogy ne csak a fizikai tünetek megszüntetését eredményezze, hanem a gyógyulás valóban életre szólóan tartós legyen.
-            </p>
-            <p>A lelki problémák megoldására az egyedileg kialakított 100 Kárpád-medencei gyógynövény egyedi komplex keveréke ad megoldást.
-            </p>
-            <p>A virág eszenciák összessége, amely minden ember speciális tulajdonságait figyelembe véve segít elindítani a harmonizálást és ezáltal az öngyógyítást.
-            </p>
-            <p>Az ember testében áramló életenergiák lelki nyugalom esetén könnyedén és akadálymentesen zajlanak. Amikor valamilyen lelki gond adódik és az hosszú távon fennáll, egy gátló tényező keletkezik, amely akadályozza a kiegyensúlyozott áramlást.
-              A Márkus Elixír ezeket a gátakat blokkolja és oldja fel, amely révén a lassan elindítja a probléma feldolgozását.
-            </p>
-          </div>
-        </div>
-      </div>
-    </article>
     <footer>
       <div class="container">
         <div class="row">
@@ -196,7 +179,6 @@
         </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

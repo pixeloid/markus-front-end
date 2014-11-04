@@ -1,0 +1,25 @@
+{
+  "name": "markus-front-end",
+  "version": "0.0.0",
+  "homepage": "https://github.com/pixeloid/markus-front-end",
+  "authors": [
+    "Gergely Olah <olah.gergely@pixeloid.hu>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.3.0",
+    "idangerous-swiper": "~2.7.0",
+    "lesshat": "~3.0.2"
+  }
+}

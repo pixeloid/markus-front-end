@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 				separator: ';',
 			},
 			src: [
-			'./bower_components/jquery/jquery.js',
+			'./bower_components/jquery/dist/jquery.js',
 			'./bower_components/bootstrap/dist/js/bootstrap.js',
 			'./bower_components/idangerous-swiper/dist/idangerous.swiper.min.js',
 			'./src/js/app.js'
